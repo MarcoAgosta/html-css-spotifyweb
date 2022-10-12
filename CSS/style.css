@@ -3,3 +3,62 @@
     margin: 0;
     padding: 0;
 }
+
+:root{
+    --player-color: #181818;
+    --black-color: black;
+    --primary-color:#03002E;
+    --secondary-color:#0A0A0A;
+}
+
+.app-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    display: flex;
+    flex-grow: 1;
+}
+
+.player{
+    width: 100%;
+    display: flex;
+    height: 100px;
+    background-color: var(--player-color);
+    z-index: 99;
+}
+
+.left-container{
+    flex-basis: 20%;
+    height: 100%;
+    background-color: var(--black-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    flex-shrink: 0;
+}
+
+.logo img{
+    display: inline-block;
+    width: 100%;
+}
+
+.playlist{
+    flex-grow: 1;
+}
+
+.icons{
+    flex-shrink: 0;
+    color: darkgray;
+}
+
+.right-container{
+    flex-basis: 80%;
+    height: 100%;
+    background-color: var(--primary-color);
+}
