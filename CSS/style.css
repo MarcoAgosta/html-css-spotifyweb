@@ -48,13 +48,24 @@ main{
     width: 100%;
 }
 
-.playlist{
+.playlist-container{
     flex-grow: 1;
+    color: darkgray;
+}
+
+.playlist-creator{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .icons{
     flex-shrink: 0;
     color: darkgray;
+}
+
+.app-installer{
+    border-bottom: 1px solid gray;
 }
 
 .right-container{
