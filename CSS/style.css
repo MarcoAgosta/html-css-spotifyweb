@@ -221,6 +221,7 @@ main{
 .player{
     width: 100%;
     display: flex;
+    flex-shrink: 0;
     height: 100px;
     background-color: var(--player-color);
     z-index: 99;
@@ -228,7 +229,7 @@ main{
 }
 
 .selected-section{
-    width: 20%;
+    width: 30%;
     flex-shrink: 0;
     display: flex;
     align-items: center;
@@ -240,6 +241,33 @@ main{
     align-items: center;
 }
 
+.img-played-album{
+    width: 40%;
+    padding: .5rem;
+}
+
+.name-played-album{
+    width: 60%;
+}
+
+.name-played-album h4{
+    width: 100%;
+    font-size: .8rem;
+    color: var(--white-color);
+}
+
+.name-played-album div{
+    display: flex;
+    flex-direction: column;
+    font-size: .7rem;
+    color: var(--font-color);
+}
+
+.played-album img{
+    width: 100%;
+    max-width: 90px;
+}
+
 .selected-icons{
     display: flex;
     flex-direction: column;
@@ -249,34 +277,73 @@ main{
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
 }
 
-.command-section div{
+.buttons{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: .5rem;
+    color: var(--white-color);
+}
+
+.time{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: .5rem;
+}
+
+.start-time, .end-time{
+    font-size: .6rem;
 }
 
 .barra{
-    width: 40%;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    margin: 0 .2rem;
 }
 
 .volume-section{
     flex-shrink: 0;
     display: flex;
     align-items: center;
-    width: 20%;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.volume-icons{
+    display: flex;
+    flex-basis: 30%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.volume-icons i{
+    font-size: .8rem;
+    margin: 0 .2rem;
+}
+
+.volume-bar{
+    display: flex;
+    align-items: center;
+    margin-right: .5rem;
+    flex-basis: 50%;
+    margin-bottom: 3px;
 }
 
 .bar-full{
     background-color: white;
-    height: 1px;
-    width: 10%;
+    height: 3px;
+    width: 30%;
 }
 
 .bar-empty{
     background-color: var(--font-color);
-    height: 1px;
-    width: 30%;
+    height: 3px;
+    width: 70%;
 }

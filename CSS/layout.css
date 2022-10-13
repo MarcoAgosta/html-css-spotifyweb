@@ -60,12 +60,47 @@
         border-bottom: 1px solid darkgray;
         padding-bottom: .5rem;
     }
+
+    .name-played-album div{
+        flex-direction: row;
+    }
+
+    .name-played-album h5{
+        margin-right: .2rem;
+    }
+
+    .selected-section{
+        flex-basis: 25%;
+        max-width: 200px;
+    }
+
+    .volume-section{
+        flex-basis: 25%;
+        max-width: 200px;
+    }
+
+    .volume-icons i{
+        margin: 0 0.5rem;
+    }
+
+    .buttons{
+        max-width: 35%;
+        min-width: 154px;
+    }
 }
 
 @media screen and (min-width: 768px) {
 
     .md-1-4{
         flex-basis: 25%;
+    }
+
+    .selected-icons{
+        flex-direction: row;
+    }
+
+    .selected-icons div{
+        margin: 0 .4rem;
     }
     
 }
@@ -74,6 +109,18 @@
 
     .lg-1-6{
         flex-basis: calc(100%/6);
+    }
+
+    .command-section{
+        max-width: 800px;
+    }
+
+    .buttons{
+        max-width: 250px;
+    }
+
+    .player{
+        justify-content: space-between;
     }
     
 }
