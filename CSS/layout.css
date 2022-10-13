@@ -1,0 +1,70 @@
+@media screen and (min-width: 568px) {
+
+    .left-container{
+        flex-basis: 35%;
+        align-items: flex-start;
+        max-width: 250px;
+    }
+
+    .logo-small{
+        display: none;
+    }
+    
+    .logo-large{
+        display: block;
+        width: 50%;
+        margin-left: 1rem;
+    }
+
+    .playlist-container{
+        display: block;
+    }
+
+    .icons span{
+        display: inline-block;
+        margin-left: .5rem;
+        font-size: .8rem;
+    }
+
+    .top-left{
+        width: 20%;
+        display: inline-block;
+        margin-left: 1rem;
+        flex-grow: 0;
+    }
+
+    .top-left div{
+        display: flex;
+        align-items: center;
+    }
+
+    .bottom-left{
+        margin-left: 1rem;
+        margin-right: 1rem ;
+        margin-bottom: 1rem;
+    }
+
+    .bottom-left img{
+        width: 10%;
+        margin: 0;
+    }
+
+    .bottom-left div{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .app-installer{
+        border-bottom: 1px solid darkgray;
+        padding-bottom: .5rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    
+}
+
+@media screen and (min-width: 992px) {
+    
+}

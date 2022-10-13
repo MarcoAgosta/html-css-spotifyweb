@@ -11,6 +11,7 @@
     --primary-color:#03002E;
     --secondary-color:#0A0A0A;
     --font-color: darkgray;
+    --white-color: white;
 }
 
 .app-container{
@@ -27,45 +28,113 @@ main{
 }
 
 .left-container{
-    flex-basis: 20%;
+    flex-basis: 10%;
     height: 100%;
     background-color: var(--black-color);
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     overflow: auto;
 }
 
 .logo{
     flex-shrink: 0;
+    margin: 10% 0;
 }
 
-.logo img{
-    display: inline-block;
-    width: 100%;
+.logo-small{
+    display: block;
+    width: 60%;
+    margin: auto;
+}
+
+.logo-large{
+    display: none;
 }
 
 .playlist-container{
+    width: 80%;
+    margin: auto;
     flex-grow: 1;
-    color: var(--font-color)
+    color: var(--font-color);
+    display: none;
+}
+
+.playlist-container div{
+    margin: 1rem 0;
+}
+
+.playlist-container h4{
+    color: var(--white-color);
+    font-size: .8rem;
 }
 
 .playlist-creator{
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    width: 100%;
 }
 
-.icons{
-    flex-shrink: 0;
+.playlist-creator button{
+    background-color: var(--font-color);
+    color: var(--black-color);
+    border: none;
+    width: 25%;
+    aspect-ratio: 1/1;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.top-left{
+    flex-grow: 1;
     color: var(--font-color)
 }
 
+.top-left div{
+    margin: 10px 0;
+}
+
+.top-left img{
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+
+.icons span{
+    display: none;
+}
+
+.bottom-left{
+    color: var(--font-color);
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .app-installer{
-    border-bottom: 1px solid var(--font-color);
+    margin-bottom: 1rem;
+}
+
+.app-installer img{
+    display: block;
+    width: 30%;
+    margin: auto;
+}
+
+.profile img{
+    background-color: darkgray;
+    width: 50%;
+    border-radius: 100%;
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem;
+    aspect-ratio: 1/1;
 }
 
 .right-container{
-    flex-basis: 80%;
+    flex-grow: 1;
     height: 100%;
     background-color: var(--primary-color);
     overflow: auto;
@@ -109,7 +178,6 @@ main{
 .card img{
     display: block;
 }
-
 
 .top-bar button{
     color: var(--font-color);
