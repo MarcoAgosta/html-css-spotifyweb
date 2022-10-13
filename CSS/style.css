@@ -8,7 +8,7 @@
 :root{
     --player-color: #181818;
     --black-color: black;
-    --primary-color:#03002E;
+    --primary-color: #202122;
     --secondary-color:#0A0A0A;
     --font-color: darkgray;
     --white-color: white;
@@ -29,6 +29,7 @@ main{
 
 .left-container{
     flex-basis: 10%;
+    min-width: 40px;
     height: 100%;
     background-color: var(--black-color);
     display: flex;
@@ -143,29 +144,55 @@ main{
 .top-bar{
     width: 100%;
     background-color: var(--secondary-color);
-    padding: 10px;
+    padding: 1rem 0; 
     display: flex;
     justify-content: flex-end;
+}
+
+.top-bar button{
+    color: var(--white-color);
+    background-color: var(--secondary-color);
+    border: 1px solid var(--white-color);
+    border-radius: 50px;
+    padding: .5rem 3rem;
+    margin-right: .6rem;
 }
 
 .categorie{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .categorie button{
     background-color: var(--primary-color);
     color: gray;
     border: none;
+    margin: 1rem .6rem;
+}
+
+.album-container{
+    margin: 1rem;
 }
 
 .titolo{
-    color: white;
+    color: var(--white-color);
+    margin-bottom: 1rem;
 }
 
-.albums{
+.sottotitolo{
+    color: var(--font-color);
+    margin-bottom: 2rem;
+}
+
+.row{
     display: flex;
     flex-wrap: wrap;
+}
+
+.col{
+    flex-basis: 50%;
+    margin-bottom: 1rem;
 }
 
 .card{
@@ -177,14 +204,18 @@ main{
 
 .card img{
     display: block;
+    width: 90%;
+    margin: auto;
 }
 
-.top-bar button{
-    color: var(--font-color);
-    background-color: var(--secondary-color);
-    border: 1px solid var(--font-color);
-    border-radius: 10px;
-    padding: 1rem;
+.artist img{
+    border-radius: 100%;
+}
+
+.card h4{
+    color: var(--white-color);
+    margin: 1rem auto;
+    text-align: center;
 }
 
 .player{

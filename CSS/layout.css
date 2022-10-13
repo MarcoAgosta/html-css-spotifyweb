@@ -4,6 +4,7 @@
         flex-basis: 35%;
         align-items: flex-start;
         max-width: 250px;
+        min-width: 200px;
     }
 
     .logo-small{
@@ -62,9 +63,17 @@
 }
 
 @media screen and (min-width: 768px) {
+
+    .md-1-4{
+        flex-basis: 25%;
+    }
     
 }
 
 @media screen and (min-width: 992px) {
+
+    .lg-1-6{
+        flex-basis: calc(100%/6);
+    }
     
 }
