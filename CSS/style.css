@@ -208,6 +208,32 @@ main{
     margin: auto;
 }
 
+.card-album{
+    position: relative;
+}
+
+.album-play{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    border: 3px solid var(--font-color);
+    border-radius: 100%;
+    padding:.5rem .7rem;
+    aspect-ratio: 1/1;
+    display: none; 
+}
+
+.card-album:hover{
+    -webkit-filter: grayscale(60%);
+     filter: grayscale(60%);
+}
+
+.card-album:hover .album-play{
+    display: block;
+}
+
 .artist img{
     border-radius: 100%;
 }
