@@ -361,6 +361,10 @@ main{
     width: 70%;
     margin: 0 auto;
     margin-top: .5rem;
+    color: var(--font-color);
+}
+
+.buttons i:hover{
     color: var(--white-color);
 }
 
@@ -412,6 +416,10 @@ main{
     margin: 0 .2rem;
 }
 
+.volume-icons i:hover{
+    color: var(--white-color);
+}
+
 .volume-bar{
     display: flex;
     align-items: center;
@@ -430,7 +438,7 @@ main{
 }
 
 .bar-full{
-    background-color: var(--green-color);
+    background-color: var(--white-color);
     height: 3px;
     width: 30%;
 }
